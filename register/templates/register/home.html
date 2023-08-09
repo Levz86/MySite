@@ -1,0 +1,27 @@
+{% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome {{ user.username }}!</h3>
+
+        <a href="{% url 'logout' %}">Logout?</a>
+    </div>
+    <div>
+        <a href = "{% url 'about' %}">About</a>
+    </div>
+    <div>
+        <a href = "{% url 'Jelly_Jumpers' %}">Jelly Jumpers</a>
+    </div>
+    <div>
+        <a href = "{% url 'contact' %}">contact</a>
+    </div>
+    <div>
+        <a href = "{% url 'add_post' %}">Add Post</a>
+    </div>
+
+    
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome!</h3>
+        <a href="{% url 'register' %}">Signup</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endif %}
