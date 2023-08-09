@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
+''' This is the second docstring'''
+
 # Create your views here.
 
 def Jelly_Jumpers(request):
