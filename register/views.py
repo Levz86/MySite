@@ -22,5 +22,5 @@ def register(request):
     context = {'form': form}
     return render(request, 'register/register.html', context)
 
-
+'''Promise this is the last docstring'''
 
